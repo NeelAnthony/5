@@ -1,0 +1,12 @@
+def count_elements(lst):
+    counts = {}
+    for element in lst:
+        if element in counts:
+            counts[element] += 1
+        else:
+            counts[element] = 1
+    return counts
+
+numbers = [1, 2, 3, 2, 1, 3, 4, 5, 4]
+occurrences = count_elements(numbers)
+print(occurrences)
